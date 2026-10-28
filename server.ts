@@ -14,7 +14,7 @@ import {
   INITIAL_CRAWL_LOGS,
   getPagesForChunk,
   ALL_PSEO_PAGES
-} from './src/data/pseoData.ts';
+} from './data/pseoData.ts';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
