@@ -1,0 +1,6 @@
+{
+  "name": "IPTV Österreich – iptvaustriahd.com",
+  "description": "Premium 4K IPTV Anbieter für Österreich mit über 21.000 Live-Sendern, ORF UHD, Sky Sport Austria, DAZN und über 120.000 Filmen & Serien ohne Vertrag.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

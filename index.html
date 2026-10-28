@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="de-AT" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      (function() {
+        try {
+          var originalFetch = window.fetch;
+          var currentFetch = typeof originalFetch === 'function' ? originalFetch : null;
+          Object.defineProperty(window, 'fetch', {
+            configurable: true,
+            enumerable: true,
+            get: function() {
+              return currentFetch;
+            },
+            set: function(fn) {
+              currentFetch = fn;
+            }
+          });
+        } catch (e) {
+          /* ignore */
+        }
+      })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <title>IPTV Österreich – Über 21.000 Sender ohne Vertrag | iptvaustriahd.com</title>
+    <meta name="description" content="IPTV Österreich: Bester 4K IPTV Anbieter mit ORF 1 UHD, Sky Sport Austria, ServusTV, DAZN & 120.000+ Filmen und Serien. Keine Schüssel, kein Vertrag. Sofortige Freischaltung ohne Bindung." />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="theme-color" content="#090a0f" />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebApplication",
+          "@id": "https://iptvaustriahd.com/#service",
+          "name": "IPTV Österreich",
+          "url": "https://iptvaustriahd.com",
+          "applicationCategory": "EntertainmentApplication",
+          "operatingSystem": "Smart TV, Android, Apple TV, Fire TV, Windows, iOS, Enigma2, MAG",
+          "description": "Premium 4K IPTV Streaming für Österreich mit ORF, ServusTV, Sky Sport Austria, DAZN, über 21.000 Live-Sendern und 120.000+ Filmen & Serien.",
+          "offers": {
+            "@type": "AggregateOffer",
+            "lowPrice": "10.00",
+            "highPrice": "135.00",
+            "priceCurrency": "EUR",
+            "offerCount": "5",
+            "offers": [
+              {
+                "@type": "Offer",
+                "name": "1 Monat IPTV Österreich",
+                "price": "10.00",
+                "priceCurrency": "EUR",
+                "availability": "https://schema.org/InStock"
+              },
+              {
+                "@type": "Offer",
+                "name": "12 Monate IPTV Österreich Premium",
+                "price": "80.00",
+                "priceCurrency": "EUR",
+                "availability": "https://schema.org/InStock"
+              }
+            ]
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "3840",
+            "bestRating": "5",
+            "worstRating": "1"
+          }
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://iptvaustriahd.com/#organization",
+          "name": "IPTV Österreich HD",
+          "url": "https://iptvaustriahd.com",
+          "logo": "https://iptvaustriahd.com/logo.svg",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "Customer Support",
+            "availableLanguage": ["German", "English"]
+          }
+        }
+      ]
+    }
+    </script>
+  </head>
+  <body class="bg-[#08090d] text-slate-100 antialiased selection:bg-red-600/30 selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
